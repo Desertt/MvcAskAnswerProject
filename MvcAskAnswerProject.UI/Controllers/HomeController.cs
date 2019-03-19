@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcAskAnswerProject.DataAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,8 @@ namespace MvcAskAnswerProject.UI.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            DatabaseContext ct = new DatabaseContext();
+            ct.Database.CreateIfNotExists();
             return View();
         }
 

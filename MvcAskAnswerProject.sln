@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAskAnswerProject.UI", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAskAnswerProject.Entities", "MvcAskAnswerProject.Entities\MvcAskAnswerProject.Entities.csproj", "{94FA82A2-D040-41B7-8C64-AF153D45A546}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAskAnswerProject.DataAccessLayer", "MvcAskAnswerProject.DataAccessLayer\MvcAskAnswerProject.DataAccessLayer.csproj", "{CCE02F41-7C85-4FE4-A7F7-E1B68A7C98CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{94FA82A2-D040-41B7-8C64-AF153D45A546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94FA82A2-D040-41B7-8C64-AF153D45A546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94FA82A2-D040-41B7-8C64-AF153D45A546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE02F41-7C85-4FE4-A7F7-E1B68A7C98CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE02F41-7C85-4FE4-A7F7-E1B68A7C98CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE02F41-7C85-4FE4-A7F7-E1B68A7C98CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE02F41-7C85-4FE4-A7F7-E1B68A7C98CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
