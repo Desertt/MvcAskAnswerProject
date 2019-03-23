@@ -1,6 +1,7 @@
 ﻿using MvcAskAnswerProject.Entities;
 using System;
 using System.Data.Entity;
+using FakeData;
 
 namespace MvcAskAnswerProject.DataAccessLayer
 {
@@ -44,9 +45,29 @@ namespace MvcAskAnswerProject.DataAccessLayer
 
             context.Kullanicilar.Add(kullanici);
             context.Kullanicilar.Add(kullanici2);
+            
+            for (int i = 0; i < FakeData.NumberData.GetNumber(5,10); i++)
+            {
+                Kategori kategori;
+                if (i%2==0)
+                {
+                    kategori = new Kategori
+                    {
+                        Baslik = FakeData.TextData.GetSentences(1),
+                        Aciklama=FakeData.PlaceData.GetAddress(),
+                        AktifMi = true,
+                        EklemeTarihi = DateTime.Now,
+                        EkleyenKullanici = kullanici.KullaniciAdi,
+                        Kullanici=kullanici,
+                        DuzenlemeTarihi = DateTime.Now,
+                        DuzenleyenKullanici = kullanici.KullaniciAdi
+                        
+                    };
+                    context.Kategoriler.Add(kategori);
+                }
+            }
+
             context.SaveChanges();
-
-
 
 
         }
