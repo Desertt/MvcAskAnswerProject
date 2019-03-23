@@ -13,7 +13,7 @@ namespace MvcAskAnswerProject.UI.Controllers
         public ActionResult Index()
         {
             DatabaseContext ct = new DatabaseContext();
-            ct.Database.CreateIfNotExists();
+            ct.Kullanicilar.ToList();
             return View();
         }
 

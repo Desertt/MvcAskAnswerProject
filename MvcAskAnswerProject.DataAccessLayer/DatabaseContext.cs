@@ -12,7 +12,7 @@ namespace MvcAskAnswerProject.DataAccessLayer
 
         public DatabaseContext()
         {
-
+            Database.SetInitializer (new ExampleData());
         }
 
 
