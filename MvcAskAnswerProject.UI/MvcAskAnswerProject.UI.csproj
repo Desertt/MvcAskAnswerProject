@@ -204,9 +204,9 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvcAskAnswerProject.DataAccessLayer\MvcAskAnswerProject.DataAccessLayer.csproj">
-      <Project>{cce02f41-7c85-4fe4-a7f7-e1b68a7c98cb}</Project>
-      <Name>MvcAskAnswerProject.DataAccessLayer</Name>
+    <ProjectReference Include="..\MvcAskAnswerProject.Business\MvcAskAnswerProject.Business.csproj">
+      <Project>{aa29f20d-31ee-4bec-9f03-11c5484b865e}</Project>
+      <Name>MvcAskAnswerProject.Business</Name>
     </ProjectReference>
     <ProjectReference Include="..\MvcAskAnswerProject.Entities\MvcAskAnswerProject.Entities.csproj">
       <Project>{94fa82a2-d040-41b7-8c64-af153d45a546}</Project>
