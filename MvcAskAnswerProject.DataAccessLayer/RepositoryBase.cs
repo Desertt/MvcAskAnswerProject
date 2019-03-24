@@ -1,28 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MvcAskAnswerProject.DataAccessLayer
+﻿namespace MvcAskAnswerProject.DataAccessLayer
 {
     //Singleton Tasarım Modeli
     public class RepositoryBase
     {
         protected static DatabaseContext context;
-
+        private static object _lock = new object();
 
         public RepositoryBase()
         {
-            OlusturContext();            
+            OlusturContext();
 
         }
 
         private static void OlusturContext()
         {
-            if (context==null )
+            if (context == null)
             {
-                context = new DatabaseContext();
+                lock (_lock)
+                {
+                    context = new DatabaseContext();
+                }
             }
         }
     }
