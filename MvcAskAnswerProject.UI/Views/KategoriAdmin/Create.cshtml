@@ -5,6 +5,25 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+<style>
+    .validation-summary-errors {
+        color: #ac5460;
+        background-color: #f7b9c1;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ac5460;
+        margin-bottom: 10px;
+        
+    }
+    .validation-summary-errors ul{
+        list-style-image: url("../Content/images/errorlist.png");
+        list-style-position:inside;
+        padding:0;
+        margin:0;
+    }
+
+</style>
+
 <div class="container-fluid">
     <!-- DataTables Example -->
     <div class="card mb-3">

@@ -111,6 +111,7 @@
     <Content Include="Content\datatables\dataTables.bootstrap4.min.js" />
     <Content Include="Content\datatables\jquery.dataTables.js" />
     <Content Include="Content\datatables\jquery.dataTables.min.js" />
+    <Content Include="Content\images\errorlist.png" />
     <Content Include="Content\jquery-easing\jquery.easing.compatibility.js" />
     <Content Include="Content\jquery-easing\jquery.easing.js" />
     <Content Include="Content\jquery-easing\jquery.easing.min.js" />
